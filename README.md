@@ -39,33 +39,10 @@ The algorithms tested in this work included [CropPhenology](https://github.com/S
 
 ## Example:
 
-The NPP processing can be executed by using two main functions. After obtaining the NDVI, LST, SOL and We collections and set the constants Topt and LUEmax, the NPP is computed for each set of images using the collectionNPP function. The first image of each collection is also used to exemplify the computation of only one NPP image by using the singleNPP function.
+The function to extract phenological metrics works:
 
-#### singleNPP
+#### namefunction
 
 ``` r
-var imageNDVI = ee.Image(...)   // NDVI Image
-
-var imageLST = ee.Image(...)    // LST Image
-
-var imageSOL = ee.Image(...)    // SOL Image
-
-var imageWe = ee.Image(...)     // We Image
-
-var Topt = CONST                // Optimal temperature constant (e.g. 21.66)
-
-var LUEmax = CONST              // Max LUE constant (e.g. 0.72)
-
-// Import NPP processing module
-var computeNPP = require('users/leobeckerdaluz/NPP_algorithm:computeNPP')
-
-// Compute NPP
-var imageNPP = computeNPP.singleNPP(
-  imageNDVI, 
-  imageLST, 
-  imageSOL, 
-  imageWe, 
-  Topt, 
-  LUEmax
-)
+write function here
 ```
