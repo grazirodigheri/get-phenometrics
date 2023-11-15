@@ -7,6 +7,16 @@
 #' @return (data.frame) Data frame containing all metrics selected
 # 
 
+# Import packages extract functions
+source("R/extract_cropphenology.R")
+source("R/extract_greenbrown.R")
+source("R/extract_phenex.R")
+source("R/extract_phenofit.R")
+source("R/extract_timesat.R")
+# source("R/extract_dea.R")
+
+
+# Function to extract metrics
 get_phenometrics <- function(serie, package, parameters) {
 
     # Extracts the phenological metrics for the selected package
