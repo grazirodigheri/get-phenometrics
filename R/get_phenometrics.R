@@ -14,7 +14,7 @@ get_phenometrics <- function(serie, package, parameters) {
         method <- parameters[1]
         trs_sos <- as.numeric(parameters[2])
         trs_eos <- as.numeric(parameters[3])
-        metrics <- extract_metrics_phenofit_trs(serie, method, trs_sos, trs_eos, plot=F)
+        metrics <- extract_metrics_phenofit(serie, method, trs_sos, trs_eos, plot=F)
         names(metrics) <- c("PF_sos", "PF_eos")
     }
 
@@ -34,7 +34,7 @@ get_phenometrics <- function(serie, package, parameters) {
     else if (package == "DT") {
         m_sos <- parameters[1]
         m_eos <- parameters[2]
-        metrics_dt <- extract_metrics_dtphenology(serie, m_sos, m_eos)
+        metrics_dt <- extract_metrics_dea(serie, m_sos, m_eos)
         metrics <- metrics_dt[, c("SOS", "EOS")]
         names(metrics) = c("DT_sos", "DT_eos")
     }
