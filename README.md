@@ -14,7 +14,7 @@
 </p>
 
 <h1 align="center">
-  <a><img src="https://www.mdpi.com/remotesensing/remotesensing-15-05366/article_deploy/html/images/remotesensing-15-05366-g003.png" alt="Markdownify" width="650"></a>
+  <a><img src="https://pub.mdpi-res.com/remotesensing/remotesensing-15-05366/article_deploy/html/images/remotesensing-15-05366-ag-550.jpg?1700538472" alt="Markdownify" width="650"></a>
 </h1>
 
 ## Paper:
